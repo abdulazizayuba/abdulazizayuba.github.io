@@ -1,1 +1,137 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beams and Columns</title>
+</head>
+<body>
+
+ 
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Beams and Columns</h1>
+    <p>Building trust, one property at a time.</p>
+    <hr>
+     <!-- Navigation Bar -->
+  <nav style="background-color: #f0f0f0; padding: 10px;">
+    <a href="#home" style="margin-right: 15px;">Home</a>
+    <a href="#request">Request a Property</a>
+  </nav>
+
+
+    <h2>About Us</h2>
+    <p>
+      Beams and Columns is a leading real estate company in Nigeria, delivering homes, commercial spaces, and land opportunities since 2015.
+    </p>
+
+    <h2>Our Services</h2>
+    <ul>
+      <li>Property sales</li>
+      <li>Land documentation</li>
+      <li>Development and construction</li>
+      <li>Investment consulting</li>
+      <li>Property management</li>
+    </ul>
+
+    <h2>Why Choose Us?</h2>
+    <ul>
+      <li>Verified documents</li>
+      <li>Experienced team</li>
+      <li>Flexible payment</li>
+      <li>Trusted across Nigeria</li>
+    </ul>
+
+    <h2>Popular Locations</h2>
+    <ul>
+      <li>Abuja – Gwarinpa, Lokogoma</li>
+      <li>Lagos – Lekki, Ikeja</li>
+      <li>Port Harcourt – Woji</li>
+    </ul>
+
+    <h2>Our Offices</h2>
+    <ul>
+      <li>Head Office: Kawo, Kaduna</li>
+      <li>Branch: Tarauni, Kano</li>
+      <li>Branch: Gwarinpa, Abuja</li>
+    </ul>
+  </section>
+
+  <!-- Request a Property -->
+  <section id="request">
+    <h2>Request a Property</h2>
+    <form action="https://api.web3forms.com/submit" target="_self" method="POST">
+      <input type="hidden" name="access_key" value="c2814beb-56ba-4ac4-81dd-a5b42f4e554c">
+    <fieldset>
+        <legend>Personal info:</legend>
+      <label for="name">Full Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email Address:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]+" required><br><br>
+    </fieldset>
+    <fieldset>
+      <legend>House info:</legend>
+      <label for="location">Preferred Location:</label><br>
+      <input type="text" id="location" name="location"><br><br>
+
+      <p>Rent or Lease</p>
+      <input type="radio" id="rent" name="rentorpurchase" required>
+      <label for="rentorpurchase">Rent</label><br>
+
+
+      <input type="radio" id="purchase" name="rentorpurchase" required>
+      <label for="rentorpurchase">Purchase</label><br><br>
+
+      <label for="property">Type of House:</label><br>
+      <select id="property" name="property" required>
+        <option value="">--Select--</option>
+        <option value="1 bedroom apartment">1 bedroom apartment</option>
+        <option value="2 bedroom apartment">2 bedroom apartment</option>
+        <option value="3 bedroom flat">3 bedroom flat</option>
+        <option value="duplex">duplex</option>
+        <option value="bungalow">bungalow</option>
+        <option value="land only">land only</option>
+      </select><br><br>
+
+      <label for="price">Price range:</label><br>
+      <select id="price" name="price" required>
+        <option value="">--Select--</option>
+        <option value="1M-5M">1-5 million</option>
+        <option value="5M-15M">5-15 million</option>
+        <option value="15M-30M">15-30 million</option>
+        <option value="30M-50M">30-50 million</option>
+        <option value=">50m">over 50million</option>
+      </select><br><br>
+
+
+      <label for="message">Additional Information:</label><br>
+      <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+    </fieldset>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <!-- Contact -->
+  <section>
+    <h2>Contact Us</h2>
+    <p><a href="https://beamsandcolumns.com/contact" target="_blank">Visit Website</a></p>
+    <p>Email: <a href="mailto:info@beamsandcolumns.com">info@beamsandcolumns.com</a></p>
+    <p>Phone: <a href="tel:+2348033139773">+2348033139773</a></p>
+    <p>Address: 
+      <a href="https://maps.google.com/?q=Plot+12,+6th+Avenue,+Gwarinpa,+Abuja,+Nigeria" target="_blank">
+        Plot 12, 6th Avenue, Gwarinpa, Abuja
+      </a>
+    </p>
+  </section>
+
+  <footer>
+    <hr>
+    <p>&copy; 2025 Beams and Columns. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
+
